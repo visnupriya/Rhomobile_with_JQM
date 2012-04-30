@@ -1,0 +1,25 @@
+#sdk: "C:/RhoStudio/ruby/lib/ruby/gems/1.8/gems/rhodes-3.3.2"
+sdkversion: 3.3.2
+name: Rhodes_App_in_JQM
+version: 1.0
+vendor: rhomobile
+build: debug
+bbver: 4.6
+applog: rholog.txt
+iphone:
+  configuration: Release
+  sdk: iphonesimulator5.0
+  provisionprofile: 
+  codesignidentity: 
+  entitlements: 
+  BundleIdentifier: com.rhomobile.rhodesappinjqm
+  BundleURLScheme: rhodesappinjqm
+wp:
+  productid: cd77a4f0-74bb-012f-0499-000c29ea8393
+symbian:
+  uid: 0xeaa90181
+android:
+  version: 2.1
+extensions:
+  - json
+  - another-extension

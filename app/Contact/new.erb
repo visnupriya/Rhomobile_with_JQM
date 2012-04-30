@@ -1,0 +1,33 @@
+<div data-role="page">
+
+  <div data-role="header" data-position="inline">
+    <h1>New <%= @contact.title %></h1>
+    <a href="<%= url_for :action => :index %>" class="ui-btn-left" data-icon="back" data-direction="reverse">
+      Cancel
+    </a>
+  </div>
+
+  <div data-role="content">
+    <form method="POST" action="<%= url_for :action => :create %>">
+      <input type="hidden" name="id" value="<%= @contact.object %>"/>
+
+      
+          <div data-role="fieldcontain">
+            <label for="contact[name]" class="fieldLabel">Name</label>
+            <input type="text" id="contact[name]" name="contact[name]" <%= placeholder("Name") %> />
+          </div>
+         <div data-role="fieldcontain">
+             <label for="contact[email]" class="fieldLabel">Email</label>
+             <input type="text" id="contact[email]" name="contact[email]" <%= placeholder("email") %> />
+         </div>
+         <div data-role="fieldcontain">
+             <label for="contact[message]" class="fieldLabel">Message</label>
+             <input type="text" id="contact[message]" name="contact[message]" <%= placeholder("message") %> />
+         </div>
+      
+
+      <input type="submit" value="Create"/>
+    </form>
+  </div>
+
+</div>
